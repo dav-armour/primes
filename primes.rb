@@ -1,4 +1,7 @@
-numbers = 2..300
+print "Enter ending number: "
+endNum = gets.chomp.to_i
+
+numbers = 2..endNum
 primes = [2]
 
 for number in numbers
@@ -14,3 +17,4 @@ for number in numbers
 end
 
 print primes
+puts "\nNumber of Primes: #{primes.length}"
